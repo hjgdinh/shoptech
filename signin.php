@@ -103,6 +103,7 @@ session_start();
         </div>
       </div>
     </section>
+    <!-- Footer -->
     <?php include 'login_form/footer.php' ?>
 </body>
 <script async defer crossorigin="anonymous" src="plugins/sdk.js"></script>
