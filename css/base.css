@@ -1,0 +1,135 @@
+:root {
+    --primary-color:#1a94ff;
+    --second-color:#f85744;
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --border-color:#dbdbdb;
+    --star-gold-color:#FFce3e;
+
+    --header-height:120px;
+    --navbar-height:34px;
+    --header-search-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/* Responsive */
+
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6666%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+}
+
+/* Animation */
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes headerNotifyGrowth {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Selection */
+
+.select-input {
+    min-width: 22%;
+    height: 34px;
+    padding: 0 12px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.select-input__label {
+    font-size: 1.4rem;
+}
+
+.select-input__icon {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.select-input__list {
+    position: absolute;
+    background-color: var(--white-color);
+    top: 26px;
+    left: 0;
+    right: 0;
+    padding: 10px 16px;
+    border-radius: 2px;
+    list-style: none;
+    display: none;
+    z-index: 1;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
+}
+
+.select-input__link {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 5px 0;
+}
+
+.select-input:hover .select-input__list {
+    display: block;
+}
+
+
