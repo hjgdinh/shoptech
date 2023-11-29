@@ -49,10 +49,10 @@ session_start();
             <div class="password form-control1" style="margin-bottom:10px">
               <input type="password" id="password" name="txtpassword" placeholder="Mật khẩu" required="">
             </div>
-            <div class="" style="display:flex;justify-content: space-between;align-items: center;margin-bottom:15px">
+            <!-- <div class="" style="display:flex;justify-content: space-between;align-items: center;margin-bottom:15px">
               <span id="quenmk" style="font-weight:600;opacity: 0.8;">Quên mật khẩu</span>
               <span id="sms" style="font-weight:600;opacity: 0.8;">Đăng nhập với SMS</span>
-            </div>
+            </div> -->
             <!-- Ghi nhớ <input type="checkbox" name="remember"> -->
             <div class="recaptcha form-control1" style="margin-bottom:15px">This site is protected by reCAPTCHA and the Google <a href="">Privacy Policy</a> and <a href="">Terms of Service</a> apply.
             </div>

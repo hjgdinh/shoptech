@@ -45,25 +45,25 @@
             <th class="center table_item noExl">Xem</th>
             <th class="center table_item noExl">Sửa</th>
         </tr>
-        <?php foreach ($result as $row) : ?>git 
-            <tr>
-                <td class="center"><?php echo $row['Id'] ?></td>
-                <td><?php echo $row['Time'] ?></td>
-                <td style="text-align: left">
-                    <span class="item">Họ tên:</span> <?php echo $row['Lastname'], ' ', $row['Firstname'] ?><br>
-                    <span class="item">Email:</span> <?php echo $row['Email'] ?><br>
-                    <span class="item">Địa chỉ:</span> <?php echo $row['Address'] ?><br>
-                    <span class="item">SĐT:</span> <?php echo $row['Phone'] ?><br>
-                </td>
-                <!-- <td style="text-align: left">
+        <?php foreach ($result as $row) : ?>
+        <tr>
+            <td class="center"><?php echo $row['Id'] ?></td>
+            <td><?php echo $row['Time'] ?></td>
+            <td style="text-align: left">
+                <span class="item">Họ tên:</span> <?php echo $row['Lastname'], ' ', $row['Firstname'] ?><br>
+                <span class="item">Email:</span> <?php echo $row['Email'] ?><br>
+                <span class="item">Địa chỉ:</span> <?php echo $row['Address'] ?><br>
+                <span class="item">SĐT:</span> <?php echo $row['Phone'] ?><br>
+            </td>
+            <!-- <td style="text-align: left">
                 <span class="item">Tên:</span> <?php echo $row['Firstname'] ?><br>
                 <span class="item">Giới tính:</span> <?php echo $row['Gender'] ?><br>
                 <span class="item">Email:</span> <?php echo $row['Email'] ?><br>
             </td>            -->
-                <td class="center">
-                    <?php echo number_format($sub_total = $row["Price"] * $row["Quantity"], 0, ',', '.') ?>₫
-                </td>
-                <!-- <td class="center">
+            <td class="center">
+                <?php echo number_format($sub_total = $row["Price"] * $row["Quantity"], 0, ',', '.') ?>₫
+            </td>
+            <!-- <td class="center">
                     <?php
                     switch ($row['Pttt']) {
                         case '1':
@@ -75,30 +75,30 @@
                     }
                     ?>
                 </td> -->
-                <td class="center">
-                    <?php
-                    switch ($row['Status']) {
-                        case '0':
-                            echo "Đang chờ xác nhận";
-                            break;
-                        case '1':
-                            echo "Đã duyệt";
-                            break;
-                        case '2':
-                            echo "Đã hủy";
-                            break;
-                    }
-                    ?>
-                </td>
-                <td class="center">
-                    <a href="detail.php?id=<?php echo $row['Id'] ?>" class="noExl">Xem</a>
-                </td>
-                <td class="center">
-                    <a href="update.php?id=<?php echo $row['Id'] ?>&status=1" class="noExl">Duyệt</a><br>
-                    <a href="update.php?id=<?php echo $row['Id'] ?>&status=2" class="noExl">Hủy</a>
-                </td>
-            </tr>
-        <?php endforeach ?>
+            <td class="center">
+                <?php
+                switch ($row['Status']) {
+                    case '0':
+                        echo "Đang chờ xác nhận";
+                        break;
+                    case '1':
+                        echo "Đã duyệt";
+                        break;
+                    case '2':
+                        echo "Đã hủy";
+                        break;
+                }
+                ?>
+            </td>
+            <td class="center">
+                <a href="detail.php?id=<?php echo $row['Id'] ?>" class="noExl">Xem</a>
+            </td>
+            <td class="center">
+                <a href="update.php?id=<?php echo $row['Id'] ?>&status=1" class="noExl">Duyệt</a><br>
+                <a href="update.php?id=<?php echo $row['Id'] ?>&status=2" class="noExl">Hủy</a>
+            </td>
+        </tr>
+    <?php endforeach ?>
     </table>
 </body>
 <script type="text/javascript" src="../assets/js/script.js"></script>
