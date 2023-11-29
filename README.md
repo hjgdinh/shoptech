@@ -6,4 +6,4 @@ Bước 2:Tải và cài phpmyadmin vào Laragon <br>
 Bước 3:Clone project từ Github về vào folder www của Laragon <br>
 Bước 4:Bật Laragon lên và ấn chạy, nhập database (nằm trong folder database) vào phpmyadmin với tk là root 
 (tạo database với tên là do_an rồi import) <br>
-Bước 5:Mở trình duyệt Web như Chrome, Edge ... và chạy shop_tech.test <br>
+Bước 5:Mở trình duyệt Web như Chrome, Edge ... và chạy shoptech.test <br>
